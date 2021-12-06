@@ -1,4 +1,4 @@
-package ibf2021.d1;
+package ibf2021.d3;
 
 import javax.sound.midi.Soundbank;
 import java.io.File;
@@ -83,8 +83,8 @@ public class ShoppingCartDB extends Main {
         FileWriter writer = new FileWriter(filename);
         for (String s : cartList) {
             writer.write(s + "\n");
+            writer.flush();
         }
-        writer.flush();
         writer.close();
     }
 
